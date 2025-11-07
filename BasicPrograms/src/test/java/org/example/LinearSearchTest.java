@@ -29,4 +29,5 @@ class LinearSearchTest {
         int result = linearSearch.linearSearch(numbers, 10);
         assertEquals(-1, result);
     }
+
 }
