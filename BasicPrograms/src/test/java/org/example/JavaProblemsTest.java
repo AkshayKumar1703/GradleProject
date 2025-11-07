@@ -10,7 +10,7 @@ class JavaProblemsTest {
 
     private final JavaProblems problems = new JavaProblems();
 
-    // ✅ Palindrome Tests
+    // Palindrome Tests
     @Test
     void testPalindromeList() {
         assertTrue(problems.isListPalindrome(Arrays.asList(1,2,3,2,1)));
@@ -37,7 +37,7 @@ class JavaProblemsTest {
     }
 
 
-    // ✅ Linear Search Tests
+    // Linear Search Tests
     @Test
     void testElementFound() {
         assertEquals(4, problems.linearSearch(Arrays.asList(2,4,0,1,9), 9));
@@ -54,7 +54,7 @@ class JavaProblemsTest {
     }
 
 
-    // ✅ Duplicate Tests
+    // Duplicate Tests
     @Test
     void testDuplicatesFound() {
         assertEquals(Arrays.asList(1,2),
@@ -68,7 +68,7 @@ class JavaProblemsTest {
     }
 
 
-    // ✅ Binary Search Tests
+    // Binary Search Tests
     @Test
     void testBinarySearchMiddle() {
         assertEquals(3, problems.binarySearch(Arrays.asList(1,3,5,7,9,11), 7));
