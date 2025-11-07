@@ -32,7 +32,11 @@ public class JavaProblems {
         return -1;
     }
 
+<<<<<<< HEAD
     // Palindrome check
+=======
+    //  Palindrome check
+>>>>>>> a0f87fd (Deleted old classes)
     public boolean isListPalindrome(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty())
             return false;
@@ -49,7 +53,11 @@ public class JavaProblems {
         return true;
     }
 
+<<<<<<< HEAD
     // Duplicates Finder (neighbor based)
+=======
+    //  Duplicates Finder (neighbor based)
+>>>>>>> a0f87fd (Deleted old classes)
     public List<Integer> findDuplicates(List<Integer> numbers) {
         List<Integer> duplicates = new ArrayList<>();
 
