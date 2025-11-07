@@ -66,10 +66,11 @@ public class JavaProblems {
         List<Integer> repeated = new ArrayList<>();
 
         for (int i = 0; i < numbers.size() - 1; i++) {
-            for (int j = i+1; j<numbers.size(); j++)
-            if (numbers.get(i).equals(numbers.get(j)) &&
-                    !repeated.contains(numbers.get(i))) {
-                repeated.add(numbers.get(i));
+            for (int j = i + 1; j < numbers.size(); j++) {
+                if (numbers.get(i).equals(numbers.get(j)) &&
+                        !repeated.contains(numbers.get(i))) {
+                    repeated.add(numbers.get(i));
+                }
             }
         }
 
