@@ -5,7 +5,7 @@ import java.util.List;
 
 public class JavaProblems {
 
-    // ✅ Binary Search
+    // Binary Search
     public int binarySearch(List<Integer> numbers, int target) {
         int left = 0;
         int right = numbers.size() - 1;
@@ -24,7 +24,7 @@ public class JavaProblems {
         return -1;
     }
 
-    // ✅ Linear Search
+    // Linear Search
     public int linearSearch(List<Integer> numbers, int target) {
         for (int i = 0; i < numbers.size(); i++)
             if (numbers.get(i) == target)
@@ -32,7 +32,7 @@ public class JavaProblems {
         return -1;
     }
 
-    // ✅ Palindrome check
+    // Palindrome check
     public boolean isListPalindrome(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty())
             return false;
@@ -49,7 +49,7 @@ public class JavaProblems {
         return true;
     }
 
-    // ✅ Duplicates Finder (neighbor based)
+    // Duplicates Finder (neighbor based)
     public List<Integer> findDuplicates(List<Integer> numbers) {
         List<Integer> duplicates = new ArrayList<>();
 
