@@ -49,7 +49,7 @@ public class JavaProblems {
         return true;
     }
 
-    // Duplicates Finder (neighbor based)
+    // Duplicates Finder sorted list
     public List<Integer> findDuplicates(List<Integer> numbers) {
         List<Integer> duplicates = new ArrayList<>();
 
@@ -61,5 +61,18 @@ public class JavaProblems {
         }
 
         return duplicates;
+    }
+    public List<Integer> unsortedDuplicates(List<Integer> numbers) {
+        List<Integer> repeated = new ArrayList<>();
+
+        for (int i = 0; i < numbers.size() - 1; i++) {
+            for (int j = i+1; j<numbers.size(); j++)
+            if (numbers.get(i).equals(numbers.get(j)) &&
+                    !repeated.contains(numbers.get(i))) {
+                repeated.add(numbers.get(i));
+            }
+        }
+
+        return repeated;
     }
 }
